@@ -1,15 +1,17 @@
+from pathlib import Path
 import json
 import logging
 import logging.config
 import os
 from dotenv import load_dotenv
-from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 LOG_DIR = BASE_DIR / "logs"
 
 load_dotenv(BASE_DIR / ".env")
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
+
+APP_LOGGER = "APP_NAME"
 
 
 # Clase para formatear los logs en JSON
