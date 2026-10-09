@@ -1,0 +1,56 @@
+fuente:
+  base_url: "https://www.datos.gov.co/resource/jbjy-vk9h.json"
+  dataset_id: "jbjy-vk9h"
+  timeout_s: 60
+
+alcance:
+  departamento: "Antioquia"
+  # Fecha de firma mínima (inclusive), formato AAAA-MM-DD.
+  fecha_desde: "2022-01-01"
+
+extraccion:
+
+  # Máximo que acepta Socrata por página: 50000.
+  page_size: 50000
+  
+  # Campo único y estable para paginar sin saltar ni repetir filas (T07).
+  order_by: "id_contrato"
+
+  # Columnas a descargar ($select).
+  
+  columnas:
+    # Contrato
+    - id_contrato
+    - proceso_de_compra
+    - urlproceso
+    - estado_contrato
+    - tipo_de_contrato
+    - modalidad_de_contratacion
+    - justificacion_modalidad_de
+    # Fechas
+    - fecha_de_firma
+    - fecha_de_inicio_del_contrato
+    - fecha_de_fin_del_contrato
+    - ultima_actualizacion
+    # Valor
+    - valor_del_contrato
+    # Entidad
+    - nit_entidad
+    - nombre_entidad
+    - departamento
+    - ciudad
+    - orden
+    - sector
+    # Proveedor
+    - documento_proveedor
+    - tipodocproveedor
+    - proveedor_adjudicado
+    - es_pyme
+
+columnas_categoricas:
+  - estado_contrato
+  - modalidad_de_contratacion
+  - tipodocproveedor
+  - es_pyme
+  - tipo_de_contrato
+  - orden
