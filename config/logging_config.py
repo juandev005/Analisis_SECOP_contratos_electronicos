@@ -11,8 +11,6 @@ LOG_DIR = BASE_DIR / "logs"
 load_dotenv(BASE_DIR / ".env")
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 
-APP_LOGGER = "APP_NAME"
-
 
 # Clase para formatear los logs en JSON
 class JsonFormatter(logging.Formatter):
@@ -71,17 +69,9 @@ LOGGING = {
         "json": _rotativo("secop.json", "DEBUG", "json"),
     },
 
-    "loggers": {
-        APP_LOGGER: {
-            "level": "DEBUG",
-            "handlers": ["consola", "archivo", "errores", "json"],
-            "propagate": False,
-        },
-    },
-
     "root": {
-        "level": "WARNING",
-        "handlers": ["consola", "errores"],
+        "level": LOG_LEVEL,
+        "handlers": ["consola", "archivo", "errores", "json"],
     },
 }
 
