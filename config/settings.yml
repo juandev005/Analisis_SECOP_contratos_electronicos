@@ -1,5 +1,5 @@
 fuente:
-  base_url: "https://www.datos.gov.co/resource/jbjy-vk9h.json"
+  base_url: "www.datos.gov.co"
   dataset_id: "jbjy-vk9h"
   timeout_s: 60
 
