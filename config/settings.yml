@@ -2,11 +2,14 @@ fuente:
   base_url: "www.datos.gov.co"
   dataset_id: "jbjy-vk9h"
   timeout_s: 60
+  max_intentos: 3
+  espera_s_base: 2
 
 alcance:
   departamento: "Antioquia"
   # Fecha de firma mínima (inclusive), formato AAAA-MM-DD.
   fecha_desde: "2022-01-01"
+  
 
 extraccion:
 
