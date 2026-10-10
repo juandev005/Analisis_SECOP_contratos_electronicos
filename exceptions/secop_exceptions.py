@@ -11,3 +11,6 @@ class SecopDataBaseNotRespondingError(SecopError):
 
 class SecopTokenNotValidError(SecopError):
     """La url base de la api no responde."""
+
+class SecopQueryNotValidError(SecopError):
+    """La url base de la api no responde."""
