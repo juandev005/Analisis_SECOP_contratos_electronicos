@@ -1,9 +1,9 @@
+from pathlib import Path
 import json
 import logging
 import logging.config
 import os
 from dotenv import load_dotenv
-from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 LOG_DIR = BASE_DIR / "logs"
@@ -69,17 +69,9 @@ LOGGING = {
         "json": _rotativo("secop.json", "DEBUG", "json"),
     },
 
-    "loggers": {
-        APP_LOGGER: {
-            "level": "DEBUG",
-            "handlers": ["consola", "archivo", "errores", "json"],
-            "propagate": False,
-        },
-    },
-
     "root": {
-        "level": "WARNING",
-        "handlers": ["consola", "errores"],
+        "level": LOG_LEVEL,
+        "handlers": ["consola", "archivo", "errores", "json"],
     },
 }
 

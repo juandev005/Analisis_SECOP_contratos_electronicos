@@ -45,12 +45,16 @@ Antes de descargar los datos se consulta a la plataforma cuántos contratos cump
 
 | Año | Contratos | Observación |
 |-----|-----------|-------------|
-| 2022 | *pendiente* | Año de elecciones presidenciales (Ley de Garantías). |
-| 2023 | *pendiente* | Último año de los gobiernos locales anteriores. |
-| 2024 | *pendiente* | Primer año de los nuevos gobiernos locales. |
-| 2025 | *pendiente* | |
-| 2026 | *pendiente* | Año incompleto hasta la fecha de corte; año de elecciones presidenciales. |
-| **Total** | *pendiente* | Fecha de la consulta: *pendiente* |
+| 2022 | 70.495 | Año de elecciones presidenciales (Ley de Garantías). |
+| 2023 | 85.967 | Último año de los gobiernos locales anteriores. |
+| 2024 | 85.567 | Primer año de los nuevos gobiernos locales. |
+| 2025 | 107.042 | |
+| 2026 | 96.948 | Año incompleto hasta la fecha de corte; año de elecciones presidenciales. |
+| **Total** | **446.019** | Fecha de la consulta: 10 de octubre de 2026 |
+
+**Lectura de estas cifras.** El volumen está muy por debajo del umbral de 1.500.000 contratos fijado en el registro de decisiones, así que el análisis abarca todas las entidades de Antioquia, sin recortes. Son cifras de una consulta previa: la cifra que sirve para verificar la descarga es la que se obtenga el mismo día de la descarga definitiva, porque la fuente cambia continuamente.
+
+**Contratos sin fecha de firma.** En la misma consulta, sin filtrar por fecha, aparecieron 5.970 contratos de entidades de Antioquia sin fecha de firma registrada. No entran en el análisis (ver sección 1), pero se informan en el reporte de calidad.
 
 
 **Cómo verificar estas cifras.** Cualquier persona puede obtenerlas abriendo estas direcciones en un navegador. Son consultas directas a la API oficial de datos.gov.co.
